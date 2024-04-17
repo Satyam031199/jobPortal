@@ -14,7 +14,7 @@ const NewsLetter = () => {
       email,
     });
     const responseOK =
-      response && response.status === 200 && response.statusText === "OK";
+      response && response.status === 200;
     if (responseOK) {
       toast.success(`Check your inbox`);
       toast.success(`Newsletter sent to ${email}`);
